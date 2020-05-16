@@ -12,4 +12,7 @@ distxy<-dist(dataFrame)
 ## create a tree
 hClustering<-hclust(distxy)
 plot(hClustering)
-
+####
+set.seed(143)
+dataMatrix<- as.matrix(dataFrame)[sample(1:12), ]
+heatmap(dataMatrix)
